@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Julie Santana</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="title">Julie Santana</div>
+
+        <div class="navBar">
+            <a href="./index.html">About Me</a>
+            <a href="./education.html"> Education </a>
+            <a href="./portfolio.html"> Portfolio </a>
+            <a href="./skills.html"> Skills </a>
+            <a href="./interest.html">Interests </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="mainContent" >
+            <div class="leftSide">
+                <img src="../images/HeadshotPlaceholder.png" alt="Avatar Icon" style="width: 100%; height: 100%">
+            </div>
+            <div class="rightSide">
+                <div class="aboutMe">
+                    <h2>Julie Santana</h2>
+                    <div class="description">
+                        <p>Upcoming CIS graduate offering a solid foundation in software design and programming principles across
+                            multiple platforms. Experienced in object-oriented programming; developing, testing and debugging
+                            code; designing interfaces; and administering systems and networks. Quickly learn and master
+                            new technologies; successful working in both team and self directed settings.</p>
+                    </div>
+
+                    <button id="myBtn">Contact Me</button>
+
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form action="mailto:julie.santana@hotmail.com" method="post" enctype="text/plain">
+                                <label for="name">Name:</label>
+                                <br>
+                                <input type="text" name="name" required>
+                                <br>
+                                <label for="email">Email:</label>
+                                <br>
+                                <input type="email" name="email" required>
+                                <br>
+                                <label for="message">Message:</label>
+                                <br>
+                                <textarea rows="10" cols="30" name="message"></textarea>
+                                <br>
+                                <br>
+                                <input type="submit" value="Send">
+                                <input type="reset" value="Reset">
+                            </form>
+                        </div>
+                        <script>
+
+                            var modal = document.getElementById('myModal');
+                            var btn = document.getElementById('myBtn');
+                            var span = document.getElementsByClassName('close')[0];
+
+                            btn.onclick = function () {
+                                modal.style.display = "block";
+                            }
+
+                            span.onclick = function () {
+                                modal.style.display = "none";
+                            }
+
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="socialMedia">
+        <a href="https://www.linkedin.com/in/julie-santana-6a849757" target="blank">
+            <img class="icon1" src="../images/Linkedin-logo.png" alt="LinkedIn" style="width:35px;height:35px;">
+        </a>
+        <a href="https://plus.google.com/u/0/103651840112582833413" target="blank">
+            <img class="icon2" src="../images/googlePlus.jpg" alt="GooglePlus" style="width:35px;height:35px;">
+        </a>
+        <a href="https://juliesantana.wixsite.com/website" target="blank">
+            <img class="icon3" src="../images/blog.png" alt="Blog" style="width:35px;height:35px;">
+        </a>
+    </div>
+    <div class="footer">
+
+        <p>&copy; Julie Santana 2018</p>
+    </div>
+</body>
+
+</html>
